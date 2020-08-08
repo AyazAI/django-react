@@ -1,0 +1,31 @@
+POST http://127.0.0.1:8000/api/api
+
+{
+    "title": "Django Second One",
+    "description": "How are you"
+}
+
+###
+GET http://127.0.0.1:8000/api/api
+
+###
+PUT http://127.0.0.1:8000/api/api/1
+
+{
+    "title": "Django Second One",
+    "description": "How are you",
+    "published": true
+}
+
+###
+GET http://127.0.0.1:8000/api/api/1
+
+###
+GET http://127.0.0.1:8000/api/api?title=q
+
+###
+GET http://127.0.0.1:8000/api/api/published
+###
+DELETE http://127.0.0.1:8000/api/api/2
+###
+DELETE http://127.0.0.1:8000/api/api
